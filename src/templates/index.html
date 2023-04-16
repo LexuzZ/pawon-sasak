@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Pawon Sasak Lombok</title>
+    <style>
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .dark-mode .artikel {
+        color: black;
+      }
+    </style>
+    <script>
+      // dark mode
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--mulai Membuat navbar--->
+    <a href="#content" class="skip-link">Skip to content ?</a>
+    <!-- Mobile Navbar -->
+    <div class="menumob">
+      <div class="iconmenu" id="menu"><a href="#">&#9776;</a></div>
+      <div class="logomob">Pawon Sasak</div>
+      <div class="logomob">&nbsp;</div>
+    </div>
+    <nav id="drawer" class="navmob">
+      <ul class="navlistmob">
+        <li class="navitemsmob"><a href="/">Home</a></li>
+        <li class="navitemsmob"><a href="#">Favorite</a></li>
+        <li class="navitemsmob">
+          <a target="_blank" href="https://github.com/LexuzZ">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="navitemsmob" onclick="myFunction()"
+            ><i data-feather="moon"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Desktop Navbar -->
+    <nav class="nav">
+      <a class="logo" href="">Pawon Sasak</a>
+      <ul class="navlist">
+        <li class="navitems"><a href="/">Home</a></li>
+        <li class="navitems"><a href="#">Favorite</a></li>
+        <li class="navitems">
+          <a target="_blank" href="https://github.com/LexuzZ">About Us</a>
+        </li>
+        <li class="navitems">
+          <a href="#" onclick="myFunction()"><i data-feather="moon"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--Akhir membuat navbar-->
+    <!-- Jumbotron -->
+    <div
+      class="hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 5, 0.5),
+            rgba(0, 0, 5, 0.5)
+          ),
+          url('images/heros/hero-image_4.jpg');
+      "
+    >
+      <div class="heroinner">
+        <h1 class="herotitle">Pawon Sasak</h1>
+        <p class="herosubtitle">Temukan Restaurant dengan rating terbaik.</p>
+      </div>
+    </div>
+    <!-- Content -->
+    <main id="content">
+      <section class="content">
+        <div class="latest">
+          <h1>Explore Restaurant</h1>
+          <div class="list" id="tes"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="site-footer">
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by Pawon Sasak Lombok.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="https://facebook.com"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  class="instagram"
+                  href="https://www.instagram.com/hrl.takaaa_/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+
+              <li>
+                <a class="github" href="https://github.com/LexuzZ"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/haerul-taka-b55656204/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FEATHER -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
