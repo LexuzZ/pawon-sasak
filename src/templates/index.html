@@ -10,6 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Pawon Sasak Lombok</title>
+
+    <!-- STYLING DARK MODE -->
     <style>
       .dark-mode {
         background-color: black;
@@ -18,9 +20,13 @@
       .dark-mode .artikel {
         color: black;
       }
+      .dark-mode .header__title {
+        color: rgb(245, 242, 242);
+      }
     </style>
+
+    <!-- JAVASCRIPT DARK MODE -->
     <script>
-      // dark mode
       function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
@@ -29,46 +35,37 @@
   </head>
 
   <body>
-    <!--mulai Membuat navbar--->
-    <a href="#content" class="skip-link">Skip to content ?</a>
-    <!-- Mobile Navbar -->
-    <div class="menumob">
-      <div class="iconmenu" id="menu"><a href="#">&#9776;</a></div>
-      <div class="logomob">Pawon Sasak</div>
-      <div class="logomob">&nbsp;</div>
-    </div>
-    <nav id="drawer" class="navmob">
-      <ul class="navlistmob">
-        <li class="navitemsmob"><a href="/">Home</a></li>
-        <li class="navitemsmob"><a href="#">Favorite</a></li>
-        <li class="navitemsmob">
-          <a target="_blank" href="https://github.com/LexuzZ">About Us</a>
+    <!-- AKSESIBILITAS SKIP CONTENT -->
+    <a href="#post" class="skip-link">Skip to content ?</a>
+
+    <!-- PRODUCT NAME HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__title">Pawon Sasak Lombok</h1>
+      </div>
+
+      <!-- HAMBURGER MENU MOBILE -->
+      <a id="menu" class="header__menu">☰</a>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="#">Favorite</a></li>
+        <li class="nav__item">
+          <a href="https://github.com/LexuzZ">About Us</a>
         </li>
-        <li>
-          <a href="#" class="navitemsmob" onclick="myFunction()"
-            ><i data-feather="moon"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Desktop Navbar -->
-    <nav class="nav">
-      <a class="logo" href="">Pawon Sasak</a>
-      <ul class="navlist">
-        <li class="navitems"><a href="/">Home</a></li>
-        <li class="navitems"><a href="#">Favorite</a></li>
-        <li class="navitems">
-          <a target="_blank" href="https://github.com/LexuzZ">About Us</a>
-        </li>
-        <li class="navitems">
+        <li class="nav__item">
           <a href="#" onclick="myFunction()"><i data-feather="moon"></i></a>
         </li>
       </ul>
     </nav>
-    <!--Akhir membuat navbar-->
-    <!-- Jumbotron -->
+
+    <!-- JUMBOTRON -->
     <div
-      class="hero"
+      class="hero-jumbotron"
       style="
         background-image: linear-gradient(
             rgba(0, 0, 5, 0.5),
@@ -77,22 +74,25 @@
           url('images/heros/hero-image_4.jpg');
       "
     >
-      <div class="heroinner">
-        <h1 class="herotitle">Pawon Sasak</h1>
-        <p class="herosubtitle">Temukan Restaurant dengan rating terbaik.</p>
+      <div class="hero-inner">
+        <h1 class="hero-title">Pawon Sasak</h1>
+        <p class="hero-description">
+          Temukan Restaurant dengan rating terbaik.
+        </p>
       </div>
     </div>
-    <!-- Content -->
-    <main id="content">
-      <section class="content">
-        <div class="latest">
-          <h1>Explore Restaurant</h1>
-          <div class="list" id="tes"></div>
+
+    <!-- CARVIEW CONTENT -->
+    <main id="post">
+      <section class="post">
+        <div class="main-content">
+          <h1>Jelajahi Wisata Kuliner</h1>
+          <div class="list" id="cardview"></div>
         </div>
       </section>
     </main>
 
-    <!-- footer -->
+    <!-- FOOTER  -->
     <footer id="footer" class="site-footer">
       <div class="container">
         <hr />
@@ -139,7 +139,7 @@
       </div>
     </footer>
 
-    <!-- FEATHER -->
+    <!-- FEATHER ICON JAVASCRIPT-->
     <script>
       feather.replace();
     </script>

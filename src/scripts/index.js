@@ -29,7 +29,7 @@ import("../DATA.json").then(({ default: jsonData }) => {
         </div>
         `;
   });
-  document.querySelector("#tes").innerHTML = dataList;
+  document.querySelector("#cardview").innerHTML = dataList;
 });
 
 // Menu
