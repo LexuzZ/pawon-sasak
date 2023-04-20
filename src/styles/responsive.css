@@ -54,18 +54,18 @@
 }
 
 @media screen and (min-width: 650px) {
-  .list_item_content {
+  .card_item_content {
     padding: 16px 32px 32px 32px;
   }
-  .list_item_title {
+  .card_item_title {
     font-size: 18px;
   }
-  .list_item_desc {
+  .card_item_desc {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 700px) {
-  .list {
+  .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
@@ -73,7 +73,7 @@
   }
 }
 @media screen and (min-width: 900px) {
-  .list {
+  .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
