@@ -45,7 +45,8 @@ body {
   font-size: 32px;
   margin: 10px auto;
   display: block;
-  width: 30px;
+  width: 44px;
+  height: 44px;
 }
 
 /* navigation */
@@ -83,7 +84,17 @@ body {
   text-decoration: solid;
   color: #000;
 }
-
+.nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid;
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+.nav a:hover::after {
+  transform: scaleX(1);
+}
 /* background - image */
 .hero-jumbotron {
   display: flex;
